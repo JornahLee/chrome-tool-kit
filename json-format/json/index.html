@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>JSONEditor | Synchronize two editors</title>
+
+    <link  href="./dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <script src="./dist/jsoneditor.min.js"></script>
+
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+        }
+
+        #jsoneditor1,
+        #jsoneditor2 {
+            width: 500px;
+            height: 500px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<p>
+    Keep two editors synchronized using <code>onChangeText</code> and <code>updateText</code>.
+</p>
+<p>
+    This can be done too with <code>onChangeJSON</code> and <code>update</code>, which can only be used in
+    modes <code>tree</code>, <code>form</code> (and <code>view</code>).
+</p>
+
+<div id="jsoneditor1"></div>
+<div id="jsoneditor2"></div>
+<script src="./load.js"></script>
+</body>
+</html>
